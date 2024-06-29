@@ -7,11 +7,12 @@ import Soup from "./Soup"
 
 function Body () {
 
-    return 
+    return  (
     <>
       <Breakfast /> <Lunch /> <Dinner /> <br /><br />
       <Salad /> <Soup /> <Desert />
     </>
+    )
 }
 
 export default Body
