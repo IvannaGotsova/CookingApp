@@ -16,8 +16,7 @@ function App() {
     <>
       <Header /> <br /><br />
       <Navigation /> <br /><br />
-      <Breakfast /> <Lunch /> <Dinner /> <br /><br />
-      <Salad /> <Soup /> <Desert /><br /><br />
+      <Body /><br /><br />
       <Footer />
     </>
   )
