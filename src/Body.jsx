@@ -1,5 +1,5 @@
 import Breakfast from "./Breakfast"
-import Desert from "./Desertsjsx"
+import Desert from "./Desert"
 import Dinner from "./Dinner"
 import Lunch from "./Lunch"
 import Salad from "./Salad"
