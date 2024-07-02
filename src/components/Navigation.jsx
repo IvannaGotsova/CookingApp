@@ -1,6 +1,6 @@
 function Navigation () {
 
-    return "Navnigation"
+    return "Navigation"
 
 }
 
