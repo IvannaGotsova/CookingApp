@@ -1,4 +1,4 @@
-{"desert":[
+[
     {
         "id": 1,
         "type": "Desert",
@@ -23,4 +23,4 @@
         "ingredients": ["one", "two", "three"],
         "howTo": "How to make ............................."
     }
-]}
+]
