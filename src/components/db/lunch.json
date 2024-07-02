@@ -1,4 +1,4 @@
-{"lunch":[
+[
     {
         "id": 1,
         "type": "Lunch",
@@ -23,4 +23,4 @@
         "ingredients": ["one", "two", "three"],
         "howTo": "How to make ............................."
     }
-]}
+]
