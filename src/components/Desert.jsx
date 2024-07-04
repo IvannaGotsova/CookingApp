@@ -5,11 +5,11 @@ function Desert () {
 
     
     return (
-        <>
+        <div style={{backgroundColor: "gray"}}>
         <h1>Desert</h1>
         <hr />
         <Receipt collection = {desert}/>
-      </>
+      </div>
     )
 
 }
