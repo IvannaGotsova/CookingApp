@@ -5,11 +5,11 @@ function Dinner () {
 
     
     return (
-        <>
+      <div style={{backgroundColor: "gray"}}>
         <h1>Dinner</h1>
         <hr />
         <Receipt collection = {dinner}/>
-      </>
+      </div>
     )
 
 }
