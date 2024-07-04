@@ -1,4 +1,5 @@
 import lunch from './db/lunch.json'
+import Receipt from './Receipt'
 
 function Lunch () {
 
@@ -7,17 +8,7 @@ function Lunch () {
         <>
         <h1>Lunch</h1>
         <hr />
-        {lunch.map(item => {
-          return (
-             <div>
-                <h3>{item.name}</h3>
-                <p key={item.id}>{item.id} - {item.type}</p>
-                <img src={item.image} alt="" />
-                <p>{item.ingredients}</p>
-                <p>{item.howTo}</p>
-             </div>
-           )
-        })}
+        <Receipt collection = {lunch}/>
       </>
     )
 
