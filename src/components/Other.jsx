@@ -5,11 +5,11 @@ function Other () {
 
     
     return (
-        <>
+      <div style={{backgroundColor: "gray"}}>
         <h1>Others</h1>
         <hr />
         <Receipt collection = {other}/>
-      </>
+      </div>
     )
 
 }
