@@ -1,4 +1,5 @@
 import soup from './db/soup.json'
+import Receipt from './Receipt'
 
 function Soup () {
 
@@ -7,17 +8,7 @@ function Soup () {
         <>
         <h1>Soup</h1>
         <hr />
-        {soup.map(item => {
-          return (
-             <div>
-                <h3>{item.name}</h3>
-                <p key={item.id}>{item.id} - {item.type}</p>
-                <img src={item.image} alt="" />
-                <p>{item.ingredients}</p>
-                <p>{item.howTo}</p>
-             </div>
-           )
-        })}
+        <Receipt collection = {soup}/>
       </>
     )
 
