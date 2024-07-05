@@ -1,5 +1,6 @@
 import other from './db/other.json'
 import Receipt from './Receipt'
+import styles from './Receipt.module.css'
 
 function Other () {
 
