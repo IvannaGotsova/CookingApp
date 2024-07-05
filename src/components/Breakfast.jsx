@@ -1,6 +1,6 @@
 import breakfast from './db/breakfast.json'
 import Receipt from './Receipt'
-import styles from './Receipt.module.css'
+import styles from '../css/Receipt.module.css'
 
 function Breakfast () {
 
