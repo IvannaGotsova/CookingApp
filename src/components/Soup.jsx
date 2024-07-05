@@ -1,12 +1,12 @@
 import soup from './db/soup.json'
 import Receipt from './Receipt'
-import styles from './Receipt.module.css'
+import styles from '../css/Receipt.module.css'
 
 function Soup () {
 
     
     return (
-      <div style={{backgroundColor: "gray"}}>
+      <div className={styles.soupStyle}>
         <h1>Soup</h1>
         <hr />
         <Receipt collection = {soup}/>
