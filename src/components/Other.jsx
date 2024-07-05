@@ -1,12 +1,12 @@
 import other from './db/other.json'
 import Receipt from './Receipt'
-import styles from './Receipt.module.css'
+import styles from '../css/Receipt.module.css'
 
 function Other () {
 
     
     return (
-      <div style={{backgroundColor: "gray"}}>
+      <div className={styles.otherStyle}>
         <h1>Others</h1>
         <hr />
         <Receipt collection = {other}/>
