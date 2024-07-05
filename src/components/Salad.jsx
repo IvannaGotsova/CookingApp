@@ -1,6 +1,7 @@
 import salad from './db/salad.json'
-import Receipt
- from './Receipt'
+import Receipt from './Receipt'
+import styles from './Receipt.module.css'
+
 function Salad () {
 
     
