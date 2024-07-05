@@ -1,5 +1,6 @@
 import soup from './db/soup.json'
 import Receipt from './Receipt'
+import styles from './Receipt.module.css'
 
 function Soup () {
 
