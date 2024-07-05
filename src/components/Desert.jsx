@@ -1,5 +1,6 @@
 import desert from './db/desert.json'
 import Receipt from './Receipt'
+import styles from './Receipt.module.css'
 
 function Desert () {
 
