@@ -1,5 +1,6 @@
 import lunch from './db/lunch.json'
 import Receipt from './Receipt'
+import styles from './Receipt.module.css'
 
 function Lunch () {
 
