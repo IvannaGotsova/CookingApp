@@ -1,27 +1,48 @@
 .breakfastStyle {
-    background-color: gray
+    background-color: gray;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .desertStyle {
-    background-color: gray
+    background-color: gray;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .dinnerStyle {
-    background-color: gray
+    background-color: gray;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .lunchStyle {
-    background-color: gray
+    background-color: gray;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .otherStyle {
-    background-color: gray
+    background-color: gray;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .saladStyle {
-    background-color: gray
+    background-color: gray;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 .soupStyle {
-    background-color: gray
+    background-color: gray;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
