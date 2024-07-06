@@ -1,3 +1,6 @@
+import styles from '../css/Receipt.module.css'
+
+
 function Receipt (props) {
 
     
@@ -8,7 +11,7 @@ function Receipt (props) {
              <div key={item.id}>
                 <h3>{item.name}</h3>
                 <p key={item.id} id={item.id}>{item.id} - {item.type}</p>
-                <img src={item.image} alt="" />
+                <img className={styles.imageStyle} src={item.image} alt="" />
                 <p>{item.ingredients}</p>
                 <p>{item.howTo}</p>
              </div>
