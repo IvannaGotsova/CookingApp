@@ -1,0 +1,8 @@
+.imageStyle {
+    width: 300px;
+    height: 300px;
+}
+
+.removedBullets {
+    list-style-type: none;
+}
