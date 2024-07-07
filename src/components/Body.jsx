@@ -28,16 +28,22 @@ function Body () {
         <ul className={styles.removedBullets}>
             <img className={styles.imageStyle} src="src\\assets\\Picture.jpg" alt="" />
             <li><a href="Breakfast">Breakfast</a></li>
+            <br />
             <img className={styles.imageStyle} src="src\\assets\\Picture.jpg" alt="" />
             <li><a href="Lunch">Lunch</a></li>
+            <br />
             <img className={styles.imageStyle} src="src\\assets\\Picture.jpg" alt="" />
             <li><a href="Dinner">Dinner</a></li>
+            <br />
             <img className={styles.imageStyle} src="src\\assets\\Picture.jpg" alt="" />
             <li><a href="Salad">Salad</a></li>
+            <br />
             <img className={styles.imageStyle} src="src\\assets\\Picture.jpg" alt="" />
             <li><a href="Soup">Soup</a></li>
+            <br />
             <img className={styles.imageStyle} src="src\\assets\\Picture.jpg" alt="" />
             <li><a href="Desert">Desert</a></li>
+            <br />
             <img className={styles.imageStyle} src="src\\assets\\Picture.jpg" alt="" />
             <li><a href="Other">Other</a></li>
         </ul>
