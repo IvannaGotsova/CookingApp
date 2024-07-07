@@ -6,3 +6,10 @@
 .removedBullets {
     list-style-type: none;
 }
+
+.addedOrder {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 300px 300px 300px; 
+    gap: 50px;
+}
