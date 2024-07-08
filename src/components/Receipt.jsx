@@ -16,12 +16,12 @@ function Receipt (props) {
                 <Popup trigger=
                 {<button className={styles.buttonStyle}>Ingredients</button>}
                 position="left center">
-                <p>{item.ingredients}</p>
+                <p className={styles.popUpWindowStyle}>{item.ingredients}</p>
                 </Popup>
                 <Popup trigger=
                 {<button className={styles.buttonStyle}>How to Make</button>}
                 position="right center">
-                <p>{item.howTo}</p>
+                <p className={styles.popUpWindowStyle}>{item.howTo}</p>
                 </Popup>             
              </div>
            )
