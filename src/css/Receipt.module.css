@@ -52,3 +52,9 @@
     height: 150px;
 }
   
+.buttonStyle {
+    background-color: darkgray;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    border: solid, black, 2px;
+}
