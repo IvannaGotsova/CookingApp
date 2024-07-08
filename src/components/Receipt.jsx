@@ -12,8 +12,8 @@ function Receipt (props) {
                 <p key={item.id} id={item.id}>{item.id} - {item.type}</p>
                 <img className={styles.imageStyle} src={item.image} alt="" />
                 <br />
-                <button>Ingredients</button>
-                <button>How to Make</button>
+                <button className={styles.buttonStyle}>Ingredients</button>
+                <button className={styles.buttonStyle}>How to Make</button>
                 <p>{item.ingredients}</p>
                 <p>{item.howTo}</p>
              </div>
