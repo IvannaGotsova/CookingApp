@@ -58,3 +58,11 @@
     text-align: center;
     border: solid, black, 2px;
 }
+
+.popUpWindowStyle {
+    border: solid, black, 2px;
+    color: black;
+    background-color: darkgray;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
