@@ -13,3 +13,8 @@
     grid-template-columns: 300px 300px 300px; 
     gap: 50px;
 }
+
+.footerStyle {
+    border-top: black;
+    text-transform: uppercase;
+}
