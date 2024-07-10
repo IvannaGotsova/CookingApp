@@ -12,9 +12,27 @@
     display: grid;
     grid-template-columns: 300px 300px 300px; 
     gap: 50px;
+    columns: black;
 }
 
 .footerStyle {
     border-top: black;
     text-transform: uppercase;
 }
+
+.displayStyle > ul > li{
+    display: inline;
+}
+
+
+.displayStyle > ul > li > a{
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.displayStyle > ul > li > a:hover{
+    background-color: black;
+    color: white;
+}
+
+
