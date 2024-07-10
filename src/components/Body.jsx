@@ -5,7 +5,6 @@ import Lunch from "./Lunch"
 import Other from "./Other"
 import Salad from "./Salad"
 import Soup from "./Soup"
-import Navigation from "./Navigation"
 import React from "react"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styles from '../css/Body.module.css'
