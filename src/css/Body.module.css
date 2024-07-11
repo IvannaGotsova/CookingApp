@@ -16,6 +16,7 @@
 }
 
 .footerStyle {
+    color: #646cff;
     border-top: black;
     text-transform: uppercase;
 }
@@ -35,4 +36,13 @@
     color: white;
 }
 
+.headingStyle {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color: #646cff;
+    text-align: left;
+    display: inline;
+}
 
+.headerContainerStyle {
+    display: inline;
+}
