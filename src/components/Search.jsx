@@ -1,8 +1,21 @@
+import breakfast from './db/breakfast.json'
+import lunch from './db/lunch.json'
+import dinner from './db/dinner.json'
+import salad from './db/salad.json'
+import soup from './db/soup.json'
+import desert from './db/desert.json'
+import other from './db/other.json'
+import styles from '../css/Body.module.css'
+
 function Search () {
+
     return (
-        <>
-        <h4>Search</h4>
-        </>
+        <form className={styles.searchContainerStyle}>
+            <br />
+            <input className={styles.searchInputStyle} type="text" placeholder="Search for.." name="search" />
+            <button className={styles.searchButtonStyle} type="submit" onClick={searchDataClickHandler}>Search</button>
+            <br />
+        </form>
     )
 }
 
