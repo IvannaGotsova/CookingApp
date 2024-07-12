@@ -43,6 +43,23 @@
     display: inline;
 }
 
-.headerContainerStyle {
+.searchContainerStyle {
     display: inline;
+}
+
+.searchButtonStyle{
+    width: 14%;
+    padding: 5px;
+    color: #646cff;
+    font-size: 17px;
+    border: 1px solid #646cff;
+}
+
+.searchInputStyle {
+    width: 84%;
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid #646cff;   
+    background-color: lightgray;
+    color:  #646cff;   
 }
