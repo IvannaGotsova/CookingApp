@@ -23,7 +23,7 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Body/ >} />
+            <Route path="/" element={<Body />} />
             <Route path="breakfast" element={<Breakfast />} />
             <Route path="lunch" element={<Lunch />} />
             <Route path="dinner" element={<Dinner />} />
