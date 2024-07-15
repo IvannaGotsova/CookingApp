@@ -1,12 +1,4 @@
-import Breakfast from "./Breakfast"
-import Desert from "./Desert"
-import Dinner from "./Dinner"
-import Lunch from "./Lunch"
-import Other from "./Other"
-import Salad from "./Salad"
-import Soup from "./Soup"
 import React from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import styles from '../css/Body.module.css'
 
 function Body () {
@@ -14,20 +6,6 @@ function Body () {
     return  (
     <>
       <div>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/">
-              <Route path="breakfast" element={<Breakfast />} />
-              <Route path="lunch" element={<Lunch />} />
-              <Route path="dinner" element={<Dinner />} />
-              <Route path="salad" element={<Salad />} />
-              <Route path="soup" element={<Soup />} />
-              <Route path="desert" element={<Desert />} />
-              <Route path="other" element={<Other />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
-        
         <ul className={styles.removedBullets}>
           <div className={styles.addedOrder}>
             <div>
