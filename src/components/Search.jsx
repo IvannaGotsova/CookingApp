@@ -13,7 +13,7 @@ function Search () {
         <form className={styles.searchContainerStyle}>
             <br />
             <input className={styles.searchInputStyle} type="text" placeholder="Search for.." name="search" />
-            <button className={styles.searchButtonStyle} type="submit" onClick={searchDataClickHandler}>Search</button>
+            <button className={styles.searchButtonStyle} type="submit">Search</button>
             <br />
         </form>
     )
