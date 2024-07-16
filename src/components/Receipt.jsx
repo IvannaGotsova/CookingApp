@@ -3,7 +3,6 @@ import styles from '../css/Receipt.module.css'
 
 
 function Receipt (props) {    
-    
     return (
         <>
         {props.collection.map(item => {
@@ -22,7 +21,8 @@ function Receipt (props) {
                 {<button className={styles.buttonStyle}>How to Make</button>}
                 position="right center">
                 <p className={styles.popUpWindowStyle}>{item.howTo}</p>
-                </Popup>             
+                </Popup>     
+                <button className={styles.buttonStyle}>More...</button>        
              </div>
            )
         })}
