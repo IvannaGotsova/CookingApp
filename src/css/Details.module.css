@@ -16,8 +16,8 @@
 }
 
 .detailsStyle > p {
-    width: 300px;
-    height: 300px;
+    word-wrap: break-word;
+    display: inline;
 }
 
 
