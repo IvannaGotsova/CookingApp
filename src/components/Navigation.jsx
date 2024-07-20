@@ -1,4 +1,5 @@
 import styles from '../css/Body.module.css'
+import { Link } from 'react-router-dom';
 
 function Navigation () {
 
@@ -6,14 +7,14 @@ function Navigation () {
         <>
             <div className={styles.displayStyle}>
                 <ul className={styles.removedBullets}>
-                    <li><a href="/">Home  </a></li> 
-                    <li><a href="Breakfast">Breakfast  </a></li>
-                    <li><a href="Lunch">Lunch  </a></li>
-                    <li><a href="Dinner">Dinner  </a></li>
-                    <li><a href="Salad">Salad  </a></li>
-                    <li><a href="Soup">Soup  </a></li>
-                    <li><a href="Desert">Desert  </a></li>
-                    <li><a href="Other">Other  </a></li>
+                    <li><Link to="/">Home  </Link></li> 
+                    <li><Link to="Breakfast">Breakfast  </Link></li>
+                    <li><Link to="Lunch">Lunch  </Link></li>
+                    <li><Link to="Dinner">Dinner  </Link></li>
+                    <li><Link to="Salad">Salad  </Link></li>
+                    <li><Link to="Soup">Soup  </Link></li>
+                    <li><Link to="Desert">Desert  </Link></li>
+                    <li><Link to="Other">Other  </Link></li>
                 </ul>                
             </div>
         </>
