@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import desert from './db/desert.json'
 import styles from '../css/Details.module.css'
+import picture from '../assets/Picture.jpg'
 
 function DesertDetails () {
     
@@ -27,7 +28,7 @@ function DesertDetails () {
         <div className={styles.detailsStyle}>
             <h4>{desert[id - 1].type}</h4>
             <h1>{desert[id - 1].name}</h1>
-            <img src={desert[id - 1].image} alt="" />
+            <img src={picture} alt="" />
             <h3>INGREDIENTS</h3>
             <ul>
                 {desert[id - 1].ingredients.map((ingredient) => (
