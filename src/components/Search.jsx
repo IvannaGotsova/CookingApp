@@ -1,10 +1,3 @@
-import breakfast from './db/breakfast.json'
-import lunch from './db/lunch.json'
-import dinner from './db/dinner.json'
-import salad from './db/salad.json'
-import soup from './db/soup.json'
-import desert from './db/desert.json'
-import other from './db/other.json'
 import styles from '../css/Body.module.css'
 
 function Search () {
