@@ -27,7 +27,6 @@ function App() {
       <Search /> <br /><br />
       <Navigation /> <br /><br />
 
-      <BrowserRouter>
         <Routes>
             <Route path="/" element={<Body />} />
             <Route path="breakfast" element={<Breakfast />} />
@@ -44,8 +43,7 @@ function App() {
             <Route path="desert/:id" element={<DesertDetails />} />
             <Route path="other" element={<Other />} />
             <Route path="other/:id" element={<OtherDetails />} />
-        </Routes>
-      </BrowserRouter><br /><br />
+        </Routes><br /><br />
 
       <Footer />
     </>
