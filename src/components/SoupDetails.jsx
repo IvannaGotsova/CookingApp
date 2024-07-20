@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import soup from './db/soup.json'
 import styles from '../css/Details.module.css'
+import picture from '../assets/Picture.jpg'
 
 function SoupDetails () {
     
@@ -27,7 +28,7 @@ function SoupDetails () {
         <div className={styles.detailsStyle}>
             <h4>{soup[id - 1].type}</h4>
             <h1>{soup[id - 1].name}</h1>
-            <img src={soup[id - 1].image} alt="" />
+            <img src={picture} alt="" />
             <h3>INGREDIENTS</h3>
             <ul>
                 {soup[id - 1].ingredients.map((ingredient) => (
