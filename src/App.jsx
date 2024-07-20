@@ -11,7 +11,7 @@ import Lunch from "./components/Lunch"
 import Other from "./components/Other"
 import Salad from "./components/Salad"
 import Soup from "./components/Soup"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import BreakfastDetails from './components/BreakfastDetails'
 import LunchDetails from './components/LunchDetails'
 import DinnerDetails from './components/DinnerDetails'
