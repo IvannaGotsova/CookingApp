@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import lunch from './db/lunch.json'
 import styles from '../css/Details.module.css'
+import picture from '../assets/Picture.jpg'
 
 function LunchDetails () {
     
@@ -27,7 +28,7 @@ function LunchDetails () {
         <div className={styles.detailsStyle}>
             <h4>{lunch[id - 1].type}</h4>
             <h1>{lunch[id - 1].name}</h1>
-            <img src={lunch[id - 1].image} alt="" />
+            <img src={picture} alt="" />
             <h3>INGREDIENTS</h3>
             <ul>
                 {lunch[id - 1].ingredients.map((ingredient) => (
