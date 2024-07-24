@@ -10,11 +10,20 @@ import soup from './db/soup.json'
 
 function Search () {
 
+    const [searchTerm, setSearchTerm] = useState();
+    const [filteredBreakfast, setFilteredBreakfast] = useState(breakfast);
+    const [filteredDesert, setFilteredDesert] = useState(desert);
+    const [filteredDinner, setFilteredDinner] = useState(dinner);
+    const [filteredLunch, setFilteredLunch] = useState(lunch);
+    const [filteredOther, setFilteredOther] = useState(other);
+    const [filteredSalad, setFilteredSalad] = useState(salad);
+    const [filteredSoup, setFilteredSoup] = useState(soup);
+
     return (
         <form className={styles.searchContainerStyle}>
             <br />
-            <input className={styles.searchInputStyle} type="text" placeholder="Search for.." name="search" />
-            <button className={styles.searchButtonStyle} type="submit">Search</button>
+            <input className={styles.searchInputStyle} type="text" value={searchTerm} placeholder="Search for.." name="search" />
+            <button className={styles.searchButtonStyle} type="submit" onChange={handleSubmitClick}>Search</button>
             <br />
         </form>
     )
