@@ -10,7 +10,7 @@ import soup from './db/soup.json'
 
 function Search () {
 
-    const [searchTerm, setSearchTerm] = useState();
+    const [searchInput, setSearchInput] = useState();
     const [filteredBreakfast, setFilteredBreakfast] = useState(breakfast);
     const [filteredDesert, setFilteredDesert] = useState(desert);
     const [filteredDinner, setFilteredDinner] = useState(dinner);
@@ -19,13 +19,34 @@ function Search () {
     const [filteredSalad, setFilteredSalad] = useState(salad);
     const [filteredSoup, setFilteredSoup] = useState(soup);
 
+    const handleSubmitClick = (e) => {
+      e.preventDefault();
+      setSearchInput(e.target.value);
+    };
+    
+
+  
+
     return (
+      <div>
         <form className={styles.searchContainerStyle}>
             <br />
-            <input className={styles.searchInputStyle} type="text" value={searchTerm} placeholder="Search for.." name="search" />
+            <input className={styles.searchInputStyle} type="text" value={searchInput} placeholder="Search for.." name="search" />
             <button className={styles.searchButtonStyle} type="submit" onChange={handleSubmitClick}>Search</button>
             <br />
         </form>
+
+          {breakfast.filter((b) => {
+            console.log(b.name)
+      return b.name.match(searchInput);
+    })}
+    
+
+   
+
+      </div>
+
+        
     )
 }
 
