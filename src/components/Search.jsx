@@ -1,44 +1,45 @@
-import styles from '../css/Body.module.css'
-import React, { useState, useEffect } from 'react'
-import breakfast from './db/breakfast.json'
-import desert from './db/desert.json'
-import dinner from './db/dinner.json'
-import lunch from './db/lunch.json'
-import other from './db/other.json'
-import salad from './db/salad.json'
-import soup from './db/soup.json'
+import styles from '../css/Body.module.css';
+import React, { useState, useEffect } from 'react';
+import breakfast from './db/breakfast.json';
+import desert from './db/desert.json';
+import dinner from './db/dinner.json';
+import lunch from './db/lunch.json';
+import other from './db/other.json';
+import salad from './db/salad.json';
+import soup from './db/soup.json';
 
-function Search () {
+const items = [...breakfast, ...lunch, ...dinner, ...desert, ...other, ...salad, ...soup];
 
+function Search() {
     const [searchInput, setSearchInput] = useState('');
     const [filteredData, setFilteredData] = useState([]);
- 
-    const items = [breakfast, lunch, dinner, desert, other, salad, soup];
- 
+
     useEffect(() => {
-        const filtered = breakfast.filter(item =>
-            item.name.toLowerCase().includes(searchInput.toLowerCase())
-        );
-        setFilteredData(filtered);
+        if (searchInput) {
+            const filtered = items.filter(item =>
+                item.name && item.name.toLowerCase().includes(searchInput.toLowerCase())
+            );
+            setFilteredData(filtered);
+        } else {
+            setFilteredData([]);
+        }
     }, [searchInput]);
 
     return (
-      <div>
-        <form className={styles.searchContainerStyle}>
-            <br />
-            <input className={styles.searchInputStyle} type="text" defaultValue={searchInput} placeholder="Search for.." name="search" />
-            <button className={styles.searchButtonStyle} type="submit" onClick={(e) => setSearchInput(e.target.value)}>Search</button>
-            <br />
-        </form>
-        <ul>
-            {filteredData.map((item, index) => (
-                <li key={index}>{item.name}</li>
-            ))}
-        </ul>
-      </div>
-
-        
-    )
+        <div>
+            <form className={styles.searchContainerStyle}>
+                <br />
+                <input className={styles.searchInputStyle} type="text" value={searchInput} placeholder="Search for.." name="search" onChange={event => setSearchInput(event.target.value)}/>
+                <button className={styles.searchButtonStyle} type="submit" onSubmit={(e) => e.preventDefault()}> New Search </button>
+                <br />
+            </form>
+            <ul className={styles.removedBullets}>  
+                {filteredData.map((item) => (
+                    <li key={item.id}>{item.name}</li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 
-export default Search
+export default Search;
