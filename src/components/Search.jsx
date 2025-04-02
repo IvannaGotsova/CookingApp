@@ -30,7 +30,7 @@ function Search() {
             <form className={styles.searchContainerStyle}>
                 <br />
                 <input className={styles.searchInputStyle} type="text" value={searchInput} placeholder="Search for.." name="search" onChange={event => setSearchInput(event.target.value)}/>
-                <button className={styles.searchButtonStyle} type="submit" onSubmit={(e) => e.preventDefault()}> New Search </button>
+                <button className={styles.searchButtonStyle} type="submit" onSubmit={(e) => e.preventDefault()}> Search </button>
                 <br />
             </form>
             <ul className={styles.removedBullets}>  
