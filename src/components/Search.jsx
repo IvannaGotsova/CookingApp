@@ -7,6 +7,7 @@ import lunch from './db/lunch.json';
 import other from './db/other.json';
 import salad from './db/salad.json';
 import soup from './db/soup.json';
+import { Link } from 'react-router-dom';
 
 const items = [...breakfast, ...lunch, ...dinner, ...desert, ...other, ...salad, ...soup];
 
@@ -35,7 +36,9 @@ function Search() {
             </form>
             <ul className={styles.removedBullets}>  
                 {filteredData.map((item) => (
-                    <li key={item.id}>{item.name}</li>
+                    <li key={item.id}>
+                      <Link to={`${item.type}/${item.id}`}>{item.name}</Link>
+                    </li>
                 ))}
             </ul>
         </div>
