@@ -26,6 +26,10 @@ function Search() {
         }
     }, [searchInput]);
 
+    const handleAfterResultClick = () => {
+        setSearchInput('');
+    };
+
     return (
         <div>
             <form className={styles.searchContainerStyle}>
@@ -37,7 +41,7 @@ function Search() {
             <ul className={styles.removedBullets}>  
                 {filteredData.map((item) => (
                     <li key={item.id}>
-                      <Link to={`${item.type}/${item.id}`}>{item.name}</Link>
+                      <Link to={`${item.type}/${item.id}`} onClick={handleAfterResultClick}>{item.name}</Link>
                     </li>
                 ))}
             </ul>
