@@ -7,7 +7,7 @@ function Other () {
     
     return (
       <div className={styles.otherStyle}>
-        <h1>Others</h1>
+        <h1>Other</h1>
         <hr />
         <Receipt collection = {other}/>
       </div>
