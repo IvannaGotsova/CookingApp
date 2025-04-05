@@ -1,44 +1,34 @@
-import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import other from './db/other.json'
 import styles from '../css/Details.module.css'
 import picture from '../assets/Picture.jpg'
 
+
 function OtherDetails () {
-    
+
     const { id } = useParams();
-    const [otherDetails, setOtherDetails] = useState(null);
-
-    useEffect(() => {
-        fetch({other})
-            .then(response => {
-                if (response.statusText == 'No Content') {
-                    console.log('No Content')
-                    return;
-                }
-
-                return response;
-            })
-            .then(result => setOtherDetails(result));
-    }, [id]);
-
-      
     
+    const otherItem = other.find(item => item.id === id);
+
+    if (!otherItem) {
+        return <div>No Other found!</div>;
+    }
     return (
         <div className={styles.detailsStyle}>
-            <h4>{other[id - 1].type}</h4>
-            <h1>{other[id - 1].name}</h1>
+            <h4>{otherItem.type}</h4>
+            <h1>{otherItem.name}</h1>
             <img src={picture} alt="" />
             <h3>INGREDIENTS</h3>
             <ul>
-                {other[id - 1].ingredients.map((ingredient) => (
+                {otherItem.ingredients.map((ingredient) => (
                   <li key={ingredient}>{ingredient}</li>
                 ))}
             </ul>
             <h3>HOW TO MAKE</h3>
-            <p>{other[id - 1].howTo}</p>
+            <p>{otherItem.howTo}</p>
         </div>
     )
+
 }
 
 export default OtherDetails
