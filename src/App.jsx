@@ -24,7 +24,7 @@ function App() {
   return (
     <>  
       <Header /> <br /><br /><br />
-      <Navigation /> <br /><br />
+      <Navigation /> <br />
       <Search /> <br /><br />
 
         <Routes>
