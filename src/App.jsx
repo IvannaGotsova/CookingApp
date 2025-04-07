@@ -23,9 +23,9 @@ function App() {
 
   return (
     <>  
-      <Header /> <br /><br />
-      <Search /> <br /><br />
+      <Header /> <br /><br /><br />
       <Navigation /> <br /><br />
+      <Search /> <br /><br />
 
         <Routes>
             <Route path="/" element={<Body />} />
